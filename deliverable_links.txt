@@ -1,0 +1,34 @@
+GitHub Repository Link:   <paste your public repo URL here after pushing, e.g. https://github.com/<you>/sem-nanostructure-classifier>
+Streamlit Cloud App Link: <paste your live app URL here after deploying, e.g. https://<you>-sem-nanostructure-classifier.streamlit.app>
+
+--------------------------------------------------------------------
+HOW TO GET THESE TWO LINKS (both require your own GitHub / Streamlit
+accounts, so these steps can't be done for you — takes ~10 minutes):
+--------------------------------------------------------------------
+
+1) Push this project to a new public GitHub repo
+   -----------------------------------------------
+   cd <this extracted folder>
+   git init
+   git add .
+   git commit -m "SEM nanostructure CNN capstone project"
+   git branch -M main
+   git remote add origin https://github.com/<your-username>/sem-nanostructure-classifier.git
+   git push -u origin main
+
+   (Create the empty repo first at https://github.com/new — make it Public,
+   don't initialize it with a README since you already have one.)
+
+2) Deploy the Streamlit app on Streamlit Community Cloud
+   -------------------------------------------------------
+   a. Go to https://share.streamlit.io and sign in with your GitHub account.
+   b. Click "New app", pick the repo you just pushed, branch "main",
+      and set the main file path to: app.py
+   c. Click "Deploy". First build takes a few minutes (installing
+      tensorflow-cpu etc.).
+   d. Once live, copy the app's URL into the "Streamlit Cloud App Link"
+      field above, and also paste both links here and/or into a text
+      cell in the notebook before you submit.
+
+Note: sem_nanostructure_cnn.keras (~4 MB) and data_resized/ (~23 MB) are
+small enough to push to GitHub directly — no Git LFS needed.
